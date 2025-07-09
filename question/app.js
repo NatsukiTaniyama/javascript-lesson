@@ -56,14 +56,16 @@ let sayWorld = function() {
 sayWorld();
 
 //Q7 メソッド
-let updatedUser = Object.assign({}, user);
-updatedUser.birthday = "2000-09-27";
-updatedUser.sayHello = function() {
+user.birthday = "2000-09-27";
+
+user.sayHello = function () {
   console.log("Hello！");
 };
 
-console.log(updatedUser.birthday);
-updatedUser.sayHello();
+console.log(user.birthday);
+user.sayHello();
+
+
 
 //Q8 引数
 let calc = {};
